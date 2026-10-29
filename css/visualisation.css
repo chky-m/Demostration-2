@@ -1,0 +1,16 @@
+.chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+.axis { color: #4b5964; font-size: 12px; }
+.axis path, .axis line { stroke: #9aa8b2; }
+.chart-title { font-size: 19px; font-weight: 700; fill: #17242f; }
+.axis-label { fill: #465560; font-size: 13px; }
+.value-label { fill: #25333e; font-size: 11px; }
+.filter-row { display: flex; gap: .5rem; flex-wrap: wrap; margin: .8rem 0 1rem; }
+.filter-row button { border: 1px solid #9aabb8; color: #254c69; background: #fff; padding: .38rem .8rem; border-radius: 5px; cursor: pointer; }
+.filter-row button:hover, .filter-row button:focus-visible { border-color: #24659a; }
+.filter-row button.active { color: #fff; background: #24659a; border-color: #24659a; }
+.legend { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-size: .85rem; margin: .7rem 0; }
+.legend span { display: inline-flex; align-items: center; gap: .3rem; }
+.legend i { width: .8rem; height: .8rem; display: inline-block; border-radius: 2px; }
+.tooltip { position: absolute; pointer-events: none; background: #183146; color: #fff; padding: .45rem .6rem; border-radius: 4px; font-size: .85rem; line-height: 1.35; box-shadow: 0 3px 10px #0003; opacity: 0; }
+.chart-frame { position: relative; }
+.chart-error { color: #9a2d21; }
