@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Exercise 6 - Interactive charts</title><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/visualisation.css"></head>
+<body>
+  <header class="site-header"><div class="wrap"><p class="eyebrow">Exercises 6.1-6.4</p><h1>Interactive TV charts</h1><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="svg-house.html">SVG house</a><a href="bar-chart.html">Bar chart</a><a href="multi-chart.html">Multi-chart</a><a aria-current="page" href="interactive.html">Interactivity</a></nav></div></header>
+  <main class="wrap">
+    <section class="panel"><h2>Energy consumption distribution</h2><p>How many TV records fall into each 200 kWh/year range? Choose a screen technology to compare its distribution with all TVs.</p><div id="filters_screen" class="filter-row" aria-label="Filter histogram by screen technology"></div><p id="filter-summary" class="note" aria-live="polite"></p><div id="histogram" class="chart responsive-svg-container" role="group" aria-label="Histogram of annual labelled TV energy consumption"></div><p class="note">The horizontal and vertical scales stay fixed when filtered. This makes the sizes of the groups comparable.</p></section>
+    <section class="panel"><h2>Star rating and energy consumption</h2><p>Does a higher star rating always mean lower labelled annual energy consumption? Each dot is one TV model record; colour identifies screen technology. Hover over a dot to see its model and screen size.</p><div id="scatterplot" class="chart responsive-svg-container chart-frame" role="group" aria-label="Scatterplot of star rating against annual energy consumption, coloured by screen technology"></div><div class="legend" aria-label="Screen technology legend"><span><i style="background:#377eac"></i>LCD</span><span><i style="background:#e29b43"></i>LED</span><span><i style="background:#8b6eb1"></i>OLED</span></div><p class="note">Source: course file <code>Ex6_TVdata_withStar.csv</code>. Larger screens may use more energy even with a high star rating; screen size is shown in the tooltip.</p></section>
+  </main>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/shared-constants.js"></script>
+  <script src="js/histogram.js"></script>
+  <script src="js/scatterplot.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/load-data.js"></script>
+</body>
+</html>
