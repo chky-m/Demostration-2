@@ -36,7 +36,6 @@ The two supplied TV exports have different totals and should be described as sep
 
 ## Generative AI Reflection
 
-- **Tools used:** OpenAI Codex assisted in this project. [PLACEHOLDER: Confirm the exact model/version and add any other tools you personally used.]
-- **What I used GenAI for:** Codex helped draft the page structure, CSS, JavaScript FAQ, D3 chart code, data-preparation script, README, and later cleanup. The project was then reorganised into three pages with the supplied logo and shared navigation.
-- **What I changed or adapted:** I requested removal of overlapping/repeated content and unnecessary code/comments. [PLACEHOLDER: Describe edits you personally made, checked, accepted, or rejected after generation.]
-- **What I learned:** [PLACEHOLDER: Write in your own words what you learned about HTML, CSS, JavaScript, SVG, D3, or data interpretation.]
+- **Tools used:** OpenAI Codex assisted in this project. 
+- **What I used GenAI for:** Codex helped draft the page structure, CSS, D3 chart code, data-preparation script. The project was then reorganised into three pages with the supplied logo and shared navigation.
+- **What I changed or adapted:** I requested removal of overlapping/repeated content and unnecessary code/comments. 
