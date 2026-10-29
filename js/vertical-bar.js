@@ -23,7 +23,7 @@ function drawVerticalBar(data) {
     .attr("y", d => yScale(d.meanKWh))
     .attr("width", xScale.bandwidth())
     .attr("height", d => innerHeight - yScale(d.meanKWh))
-    .attr("fill", "#377eac");
+    .attr("fill", "#9a5717");
   innerChart.selectAll("text.value-label").data(data).join("text")
     .attr("class", "value-label")
     .attr("x", d => xScale(d.screenTech) + xScale.bandwidth() / 2)

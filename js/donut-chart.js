@@ -11,7 +11,7 @@ function drawDonutChart(data) {
   const total = d3.sum(data, d => d.count);
   const colours = d3.scaleOrdinal()
     .domain(data.map(d => d.sizeGroup))
-    .range(["#377eac", "#e29b43", "#67a477"]);
+    .range(["#8e4c16", "#d68b1e", "#6b7442"]);
   const pie = d3.pie().sort(null).value(d => d.count);
   const arcGenerator = d3.arc().innerRadius(radius * 0.55).outerRadius(radius);
   const labelArc = d3.arc().innerRadius(radius * 0.79).outerRadius(radius * 0.79);
@@ -30,14 +30,15 @@ function drawDonutChart(data) {
     .attr("class", "slice-label")
     .attr("transform", d => `translate(${labelArc.centroid(d)})`)
     .attr("text-anchor", "middle").attr("dy", "0.35em")
-    .attr("fill", "#17242f").attr("font-size", 14).attr("font-weight", 700)
+    .attr("fill", "#342a1c").attr("font-size", 14).attr("font-weight", 700)
     .text(d => `${Math.round(d.data.count / total * 100)}%`);
   chart.append("text").attr("text-anchor", "middle").attr("font-size", 23)
-    .attr("font-weight", 700).attr("fill", "#17242f").text(d3.format(",")(total));
+    .attr("font-weight", 700).attr("fill", "#342a1c").text(d3.format(",")(total));
   chart.append("text").attr("text-anchor", "middle").attr("y", 24)
-    .attr("font-size", 13).attr("fill", "#52616e").text("TV records");
+    .attr("font-size", 13).attr("fill", "#675b47").text("TV records");
 
   const legend = d3.select("#donut-chart").append("div").attr("class", "legend");
   legend.selectAll("span").data(data).join("span")
-    .html(d => `<i style="background:${colours(d.sizeGroup)}"></i>${d.sizeGroup}: ${d3.format(",")(d.count)}`);
+    .attr("class", (d, i) => `size-group size-group-${i}`)
+    .text(d => `${d.sizeGroup}: ${d3.format(",")(d.count)}`);
 }

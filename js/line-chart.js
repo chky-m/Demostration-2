@@ -22,11 +22,11 @@ function drawLineChart(data) {
   const lineGenerator = d3.line().x(d => xScale(d.year)).y(d => yScale(d.averagePrice));
 
   innerChart.append("path").datum(data).attr("d", lineGenerator)
-    .attr("fill", "none").attr("stroke", "#24659a").attr("stroke-width", 2.5);
+    .attr("fill", "none").attr("stroke", "#9a5717").attr("stroke-width", 2.5);
   innerChart.selectAll("circle.price-point").data(data).join("circle")
     .attr("class", "price-point").attr("cx", d => xScale(d.year))
     .attr("cy", d => yScale(d.averagePrice)).attr("r", 4)
-    .attr("fill", "#24659a")
+    .attr("fill", "#9a5717")
     .append("title").text(d => `${d.year}: $${d.averagePrice}/MWh`);
   innerChart.append("g").attr("class", "axis")
     .attr("transform", `translate(0,${innerHeight})`)

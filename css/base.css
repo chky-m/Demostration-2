@@ -44,6 +44,8 @@ p { margin: .4rem 0 .9rem; }
 .faq-toggle:hover, .faq-toggle:focus-visible { color: var(--brand-dark); background: #fff9e6; }
 .faq-toggle span { font-size: 1.4rem; line-height: 1; }
 .faq-answer { padding: 0 .2rem 1rem; }
+details summary { color: var(--brand-dark); cursor: pointer; font-weight: 700; }
+.practice-svg { display: block; width: 100%; margin-top: 1rem; border-radius: .5rem; }
 [hidden] { display: none !important; }
 .site-footer { background: #392a19; color: #fff4d5; padding: 1rem 0; font-size: .9rem; }
 .responsive-svg-container { width: 100%; max-width: 1100px; margin-inline: auto; }

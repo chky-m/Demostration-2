@@ -8,7 +8,7 @@ chartSize.innerHeight = chartSize.height - chartSize.margin.top - chartSize.marg
 
 const screenColours = d3.scaleOrdinal()
   .domain(["LCD", "LED", "OLED"])
-  .range(["#377eac", "#e29b43", "#8b6eb1"]);
+  .range(["#8e4c16", "#d68b1e", "#6b7442"]);
 
 const binGenerator = d3.bin()
   .value(d => d.energyConsumption)

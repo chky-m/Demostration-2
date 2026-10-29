@@ -29,7 +29,7 @@ function drawBarChart(data) {
     .attr("x", 0).attr("y", 0)
     .attr("width", d => xScale(d.count))
     .attr("height", yScale.bandwidth())
-    .attr("fill", "#377eac");
+    .attr("fill", "#9a5717");
   barAndLabel.append("text")
     .attr("x", -10).attr("y", yScale.bandwidth() / 2)
     .attr("dy", "0.35em").attr("text-anchor", "end")

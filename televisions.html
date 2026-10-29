@@ -26,9 +26,64 @@
   <main class="wrap">
     <p class="eyebrow">Course data in context</p>
     <h1>Televisions</h1>
-    <p>Explore model records and labelled annual energy consumption in the supplied television data.</p>
+    <p>Explore model records and labelled annual energy consumption in the supplied television data. These charts describe the course files; model counts are not sales or market share.</p>
+
+    <section class="panel" aria-labelledby="brand-heading">
+      <h2 id="brand-heading">Models by brand</h2>
+      <p>Which brands have the most model records in the supplied brand-count export? Each bar shows one brand, with the count labelled at the end.</p>
+      <div id="brand-chart" class="chart responsive-svg-container" role="group" aria-label="Horizontal bar chart of TV model counts by brand"></div>
+      <p class="note">Source: <code>tvBrandCount.csv</code> from the course's <code>2026 TV Data.knwf</code> workflow.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="technology-heading">
+      <h2 id="technology-heading">Energy use by screen technology</h2>
+      <p>For 55-inch models, how does average labelled annual energy consumption vary across screen technologies?</p>
+      <div id="bar-chart" class="chart responsive-svg-container" role="group" aria-label="Mean annual energy consumption for 55-inch TVs by screen technology"></div>
+      <p class="note">Source: 55-inch records grouped from the supplied cleaned TV dataset. The labels include the number of models in each group.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="sizes-heading">
+      <h2 id="sizes-heading">Screen-size groups</h2>
+      <p>What share of the cleaned TV records have small, medium or large screens?</p>
+      <div id="donut-chart" class="chart responsive-svg-container" role="group" aria-label="Donut chart of TV model records by screen-size group"></div>
+      <p class="note">Small: up to 43 inches. Medium: 44–65 inches. Large: 66 inches and above. Each model appears in one group.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="distribution-heading">
+      <h2 id="distribution-heading">Energy-use distribution</h2>
+      <p>How many model records fall into each 200 kWh/year range? Choose a screen technology to compare its distribution with all models.</p>
+      <div id="filters_screen" class="filter-row" aria-label="Filter histogram by screen technology"></div>
+      <p id="filter-summary" class="note" aria-live="polite"></p>
+      <div id="histogram" class="chart responsive-svg-container" role="group" aria-label="Histogram of annual labelled TV energy consumption"></div>
+      <p class="note">The horizontal and vertical scales stay fixed when filtered, so the group sizes remain comparable.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="rating-heading">
+      <h2 id="rating-heading">Star rating and energy use</h2>
+      <p>Does a higher star rating always mean lower labelled annual energy use? Each dot is one model; colour shows its screen technology. Hover over a dot for model and screen-size details.</p>
+      <div id="scatterplot" class="chart responsive-svg-container chart-frame" role="group" aria-label="Scatterplot of star rating against annual energy consumption, coloured by screen technology"></div>
+      <div class="legend" aria-label="Screen technology legend"><span><i class="swatch-lcd"></i>LCD</span><span><i class="swatch-led"></i>LED</span><span><i class="swatch-oled"></i>OLED</span></div>
+      <p class="note">Source: <code>Ex6_TVdata_withStar.csv</code>. Screen size can affect energy use even when two models share a star rating.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="price-heading">
+      <h2 id="price-heading">Electricity spot-price context</h2>
+      <p>This separate course dataset shows how the average annual electricity spot price changed from 1998 to 2024. Dots mark yearly observations and a line joins them in time order.</p>
+      <div id="line-chart" class="chart responsive-svg-container" role="group" aria-label="Average annual electricity spot price by year from 1998 to 2024"></div>
+      <p class="note">Source: <code>ARE_Spot_Prices.csv</code>. The charted average excludes Tasmania and Snowy. These are spot prices in $/MWh, not household electricity bills.</p>
+    </section>
   </main>
 
   <footer class="site-footer"><div class="wrap">© <span data-year>2026</span> Tin Tran · Built with assistance from OpenAI Codex.</div></footer>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/bar-chart.js"></script>
+  <script src="js/vertical-bar.js"></script>
+  <script src="js/donut-chart.js"></script>
+  <script src="js/line-chart.js"></script>
+  <script src="js/shared-constants.js"></script>
+  <script src="js/histogram.js"></script>
+  <script src="js/scatterplot.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/load-data.js"></script>
 </body>
 </html>

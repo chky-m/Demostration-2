@@ -18,7 +18,7 @@ function drawHistogram(data) {
     .attr("class", "bin")
     .attr("x", d => xScale(d.x0) + 1)
     .attr("width", d => Math.max(0, xScale(d.x1) - xScale(d.x0) - 2))
-    .attr("fill", "#377eac");
+    .attr("fill", "#9a5717");
   histogramBars.append("title");
   updateHistogram(data);
 
