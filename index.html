@@ -3,23 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>COS30045 Demonstration 2</title>
+  <title>Home | Appliance Energy Consumption Website</title>
   <link rel="stylesheet" href="css/base.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><p class="eyebrow">COS30045 · Demonstration 2</p><h1>Data visualisation exercises</h1>
-      <nav aria-label="Main navigation"><a aria-current="page" href="index.html">Home</a><a href="svg-house.html">SVG house</a><a href="bar-chart.html">Bar chart</a><a href="multi-chart.html">Multi-chart</a><a href="interactive.html">Interactivity</a></nav>
+    <div class="wrap header-inner">
+      <a class="logo-link" href="index.html" aria-label="Appliance Energy Consumption Website, Home">
+        <img src="assets/img/PowerIcon.png" alt="" width="48" height="48">
+        <span>Appliance Energy<br>Consumption Website</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="televisions.html">Televisions</a>
+        <a href="about.html">About Us</a>
+      </nav>
     </div>
   </header>
+
   <main class="wrap">
-    <p>These pages cover the Week 4-6 work for the on-campus demonstration. Each page names the question its chart answers and the data it uses.</p>
-    <div class="card-grid">
-      <a class="card" href="svg-house.html"><h2>Exercise 4.1</h2><p>Draw a house and garden from SVG shapes. See grouped windows and coordinate annotations.</p></a>
-      <a class="card" href="bar-chart.html"><h2>Exercises 4.3-4.7</h2><p>Load TV brand counts from CSV and use D3 to build a labelled horizontal bar chart.</p></a>
-      <a class="card" href="multi-chart.html"><h2>Exercises 5.1-5.3</h2><p>Compare 55-inch TV energy use, electricity prices over time, and TV size groups.</p></a>
-      <a class="card" href="interactive.html"><h2>Exercises 6.1-6.4</h2><p>Explore TV energy consumption through a histogram, filters, scatterplot, and tooltip.</p></a>
-    </div>
+    <section class="hero">
+      <p class="eyebrow">Australian appliance energy</p>
+      <h1>Explore how appliances use energy</h1>
+      <p>This student website uses sample content and course datasets to practise reading appliance energy information. Start with televisions to explore model counts, screen sizes and labelled annual energy use.</p>
+      <a class="button-link" href="televisions.html">Explore televisions</a>
+    </section>
+
+    <section aria-labelledby="home-topics">
+      <h2 id="home-topics">What you can explore</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Energy labels</h3><p>Placeholder: explain how an Australian appliance label presents estimated energy consumption and a star rating.</p></article>
+        <article class="card"><h3>Comparing models</h3><p>Placeholder: add guidance on comparing similar appliances by size, features and labelled energy use.</p></article>
+        <article class="card"><h3>Australian market context</h3><p>Placeholder: add a short, sourced overview of appliance choices and energy use in Australia.</p></article>
+      </div>
+    </section>
+
+    <section class="panel faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <p class="note">These are draft questions and answers for the finished website.</p>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-1">What does kWh/year mean?<span aria-hidden="true">+</span></button></h3>
+        <div id="faq-answer-1" class="faq-answer" hidden><p>Placeholder: explain annual energy consumption in plain language and cite the relevant Australian guidance.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-2">Do more stars always mean a lower electricity bill?<span aria-hidden="true">+</span></button></h3>
+        <div id="faq-answer-2" class="faq-answer" hidden><p>Placeholder: explain why screen size, use time and electricity price also matter when comparing televisions.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-3">Where did the television data come from?<span aria-hidden="true">+</span></button></h3>
+        <div id="faq-answer-3" class="faq-answer" hidden><p>Placeholder: describe the course-provided television files and how the charts use them.</p></div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer"><div class="wrap">© <span data-year>2026</span> Tin Tran · Built with assistance from OpenAI Codex.</div></footer>
 </body>
 </html>
