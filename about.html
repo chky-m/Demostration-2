@@ -29,12 +29,18 @@
     <section class="panel"><h2>What the site shows</h2><p>The Televisions page explores model counts, screen technology, size groups, star ratings and labelled annual energy consumption. An electricity spot-price chart provides a separate time-series example. The figures describe records in the supplied files, not Australian sales or household electricity bills.</p></section>
     <section class="panel"><h2>How to use it</h2><p>Use the navigation at the top of every page. On Home, select a FAQ question to open or close its answer. On Televisions, use the screen-technology buttons above the histogram and hover over a point in the scatterplot for model details.</p></section>
     <section class="panel"><h2>Project scope</h2><p>Home contains clearly marked placeholder copy for future Australian appliance guidance. The chart data and their limits are described beside the visualisations. The README records the data files and the role of generative AI in development.</p></section>
-    <section class="panel"><h2>SVG drawing practice</h2><p>The earlier house exercise is kept here as a drawing example. It uses SVG shapes, a path and grouped windows with a transform.</p>
-      <details><summary>View the house drawing</summary>
-        <svg class="practice-svg" viewBox="0 0 900 650" role="img" aria-label="House with a roof, chimney, windows, garden bushes and path">
+    <section class="panel"><h2>SVG drawing practice</h2><p>The house exercise shows how the drawing changed from an initial version to a customised version. It uses shapes, a path, text, styling and grouped windows with a transform.</p>
+      <details><summary>Compare the drawings and coordinates</summary>
+        <figure class="svg-evidence">
+          <img src="assets/svg/house-initial.svg" alt="Initial house drawing with a roof, walls, windows, door, bush and sun" loading="lazy">
+          <figcaption>Initial SVG version kept for comparison. <a href="assets/img/house-initial-render.png">PNG export</a></figcaption>
+        </figure>
+        <figure class="svg-evidence">
+          <svg class="practice-svg" viewBox="0 0 900 650" role="img" aria-label="House with a roof, chimney, windows, garden bushes and path">
           <rect width="900" height="650" fill="#e7f4fd"/>
           <rect y="490" width="900" height="160" fill="#a9d794"/>
           <circle cx="750" cy="120" r="49" fill="#ffe18b"/>
+          <text class="house-title" x="36" y="54">A house in the garden</text>
           <rect x="278" y="250" width="370" height="270" rx="5" fill="#f0c99f" stroke="#604c43" stroke-width="4"/>
           <path d="M240 260 L463 95 L685 260 Z" fill="#bd554a" stroke="#604c43" stroke-width="4"/>
           <rect x="557" y="144" width="48" height="89" fill="#985047" stroke="#604c43" stroke-width="3"/>
@@ -47,8 +53,14 @@
           <path d="M421 520 C390 557 380 594 355 650 L570 650 C550 596 526 550 505 520 Z" fill="#d5bfa0"/>
           <ellipse cx="150" cy="495" rx="83" ry="42" fill="#4c9665"/>
           <ellipse cx="756" cy="502" rx="80" ry="38" fill="#4c9665"/>
-          <line x1="46" y1="545" x2="260" y2="545" stroke="#6c8c5c" stroke-width="5"/>
-        </svg>
+          </svg>
+          <figcaption>Customised SVG drawing with a chimney, path, second bush and grouped windows. <a href="assets/svg/house-final.svg">SVG source</a> · <a href="assets/img/house-final-render.png">PNG export</a></figcaption>
+        </figure>
+        <figure class="svg-evidence">
+          <img src="assets/svg/house-annotated.svg" alt="Coordinate guide labelling the roof path, wall rectangle, translated window group, sun and bush ellipse" loading="lazy">
+          <figcaption>Coordinate guide: the SVG origin is at the top left; x increases rightward and y increases downward. <a href="assets/img/house-annotated-render.png">PNG export</a></figcaption>
+        </figure>
+        <p class="note"><a href="assets/img/house-exercise-screenshot.png">View the earlier page screenshot</a> showing the three exercise sections together.</p>
       </details>
     </section>
   </main>

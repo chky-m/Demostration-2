@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="practice-svg" viewBox="0 0 900 650" role="img" aria-label="House with a roof, chimney, windows, garden bushes and path">
+          <rect width="900" height="650" fill="#e7f4fd"/>
+          <rect y="490" width="900" height="160" fill="#a9d794"/>
+          <circle cx="750" cy="120" r="49" fill="#ffe18b"/>
+          <text x="36" y="54" fill="#23435a" font-family="Arial, sans-serif" font-size="28">A house in the garden</text>
+          <rect x="278" y="250" width="370" height="270" rx="5" fill="#f0c99f" stroke="#604c43" stroke-width="4"/>
+          <path d="M240 260 L463 95 L685 260 Z" fill="#bd554a" stroke="#604c43" stroke-width="4"/>
+          <rect x="557" y="144" width="48" height="89" fill="#985047" stroke="#604c43" stroke-width="3"/>
+          <rect x="422" y="380" width="82" height="140" fill="#6d5a4f" stroke="#463a35" stroke-width="3"/>
+          <circle cx="491" cy="452" r="5" fill="#f5df91"/>
+          <g transform="translate(315 305)" fill="#c7e8fa" stroke="#604c43" stroke-width="5">
+            <rect x="0" y="0" width="76" height="76"/>
+            <rect x="240" y="0" width="76" height="76"/>
+          </g>
+          <path d="M421 520 C390 557 380 594 355 650 L570 650 C550 596 526 550 505 520 Z" fill="#d5bfa0"/>
+          <ellipse cx="150" cy="495" rx="83" ry="42" fill="#4c9665"/>
+          <ellipse cx="756" cy="502" rx="80" ry="38" fill="#4c9665"/>
+        </svg>
