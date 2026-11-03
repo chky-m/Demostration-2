@@ -23,8 +23,6 @@ Open `index.html` through VS Code Live Server or another local web server. Loadi
 - `js/site.js` fills in the year and controls the FAQ. The other files in `js/` build the D3 charts and interactions.
 - `data/` contains the supplied CSV inputs, `prepare_data.py`, and two generated chart summaries.
 
-The existing `css/`, `js/`, and `data/` directories were kept because the chart scripts and data files already used these paths. The logo is grouped under `assets/img/`.
-
 ## Data and interpretation
 
 - `data/tvBrandCount.csv` came from the course's `2026 TV Data.knwf` workflow and totals 4,240 brand records.
