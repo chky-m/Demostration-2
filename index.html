@@ -25,34 +25,55 @@
   <main class="wrap">
     <section class="hero">
       <p class="eyebrow">Australian appliance energy</p>
-      <h1>Explore how appliances use energy</h1>
-      <p>This student website uses sample content and course datasets to practise reading appliance energy information. Start with televisions to explore model counts, screen sizes and labelled annual energy use.</p>
+      <h1>Explore television energy use</h1>
+      <p>The course data records television models, their screen sizes, star ratings and labelled annual energy consumption. Explore the charts to compare the records, while remembering that model counts are not sales figures.</p>
       <a class="button-link" href="televisions.html">Explore televisions</a>
     </section>
 
     <section aria-labelledby="home-topics">
       <h2 id="home-topics">What you can explore</h2>
       <div class="card-grid">
-        <article class="card"><h3>Energy labels</h3><p>Placeholder: explain how an Australian appliance label presents estimated energy consumption and a star rating.</p></article>
-        <article class="card"><h3>Comparing models</h3><p>Placeholder: add guidance on comparing similar appliances by size, features and labelled energy use.</p></article>
-        <article class="card"><h3>Australian market context</h3><p>Placeholder: add a short, sourced overview of appliance choices and energy use in Australia.</p></article>
+        <article class="card">
+          <h3>Reading a TV energy label</h3>
+          <p>The raw TV file contains <code>Star2</code> and a labelled energy figure in kWh/year. The course dictionary identifies <code>Star2</code> as the actual star rating and describes comparative energy consumption as nominal yearly use. A rating and an energy amount answer different questions.</p>
+          <p class="source-note">Sources: Week 1 context, <cite>COS30045 W1.2 Data Processing.pdf</cite> (slide 27); raw file <cite>tv_2026_02_15.csv</cite>; course data dictionary <cite>televisionsmay2015(1).docx</cite>.</p>
+        </article>
+        <article class="card">
+          <h3>Comparing similar screens</h3>
+          <p>The 55-inch records make a more focused comparison. Their mean labelled consumption is 327.89 kWh/year for LCD, 370.76 for LED and 351.72 for OLED. These are averages of model records, with different numbers of models in each group.</p>
+          <p class="source-note">Source: Week 6, <cite>Ex6_TVdata_withStar.csv</cite>; calculated by <cite>data/prepare_data.py</cite>.</p>
+        </article>
+        <article class="card">
+          <h3>Australian market context</h3>
+          <p>The Week 1 exercise frames these records as televisions available on the Australian market. The raw data's <code>SoldIn</code> field lists countries where a model is registered for sale. Registrations describe model availability, not how many televisions people bought.</p>
+          <p class="source-note">Sources: Week 1, <cite>COS30045 W1.2 Data Processing.pdf</cite> (slide 27); <cite>tv_2026_02_15.csv</cite> and its course data dictionary.</p>
+        </article>
       </div>
     </section>
 
     <section class="panel faq" aria-labelledby="faq-heading">
       <h2 id="faq-heading">Frequently asked questions</h2>
-      <p class="note">These are draft questions and answers for the finished website.</p>
+      <p class="note">These answers use the course files named below each question.</p>
       <div class="faq-item">
         <h3><button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-1">What does kWh/year mean?<span aria-hidden="true">+</span></button></h3>
-        <div id="faq-answer-1" class="faq-answer" hidden><p>Placeholder: explain annual energy consumption in plain language and cite the relevant Australian guidance.</p></div>
+        <div id="faq-answer-1" class="faq-answer" hidden>
+          <p>It means kilowatt-hours per year: the nominal yearly energy consumption recorded for a model. For example, a television listed at 322 kWh/year has a yearly energy figure of 322 kilowatt-hours on its label, not a price of $322.</p>
+          <p class="source-note">Sources: Week 1 context, <cite>COS30045 W1.2 Data Processing.pdf</cite> (slide 27); field definition, course data dictionary <cite>televisionsmay2015(1).docx</cite>; Week 6 data, <cite>Ex6_TVdata_withStar.csv</cite>.</p>
+        </div>
       </div>
       <div class="faq-item">
         <h3><button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-2">Do more stars always mean a lower electricity bill?<span aria-hidden="true">+</span></button></h3>
-        <div id="faq-answer-2" class="faq-answer" hidden><p>Placeholder: explain why screen size, use time and electricity price also matter when comparing televisions.</p></div>
+        <div id="faq-answer-2" class="faq-answer" hidden>
+          <p>No. In the Week 6 file, a 75-inch, 8-star model is labelled 258 kWh/year, while a 21-inch, 3-star model is labelled 106 kWh/year. Compare similar screen sizes and read the kWh/year figure as well as the stars. The course file does not supply a household electricity tariff, so it cannot calculate your bill.</p>
+          <p class="source-note">Source: Week 6, <cite>Ex6_TVdata_withStar.csv</cite> (models LG 75UM767H0LD and ShareTV ST1922G).</p>
+        </div>
       </div>
       <div class="faq-item">
         <h3><button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-3">Where did the television data come from?<span aria-hidden="true">+</span></button></h3>
-        <div id="faq-answer-3" class="faq-answer" hidden><p>Placeholder: describe the course-provided television files and how the charts use them.</p></div>
+        <div id="faq-answer-3" class="faq-answer" hidden>
+          <p>The course supplied the raw <code>tv_2026_02_15.csv</code> for the Week 1 data-processing exercise and <code>Ex6_TVdata_withStar.csv</code> for Week 6. Most TV charts use 4,233 rows from the cleaned Week 6 file. The brand chart uses a separate export from <code>2026 TV Data.knwf</code> that totals 4,240 records, so its counts should not be combined with the cleaned file's counts.</p>
+          <p class="source-note">Sources: Week 1, <cite>COS30045 W1.2 Data Processing.pdf</cite> (slide 27); Week 6, <cite>Ex6_TVdata_withStar.csv</cite>; course workflow <cite>2026 TV Data.knwf</cite>.</p>
+        </div>
       </div>
     </section>
   </main>

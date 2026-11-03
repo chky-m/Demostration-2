@@ -38,6 +38,7 @@ p { margin: .4rem 0 .9rem; }
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
 .card, .panel { background: var(--paper); border: 1px solid var(--line); border-radius: .75rem; padding: 1.2rem; }
 .card p, .note { color: var(--muted); }
+.source-note { margin-top: .6rem; color: var(--muted); font-size: .82rem; line-height: 1.45; overflow-wrap: anywhere; }
 .panel { margin: 1.2rem 0; }
 .faq h3 { margin: 0; }
 .faq-item { border-top: 1px solid var(--line); }
